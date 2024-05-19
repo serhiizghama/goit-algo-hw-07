@@ -14,7 +14,7 @@ This code implements an AVL tree, which is a self-balancing binary search tree. 
 ## Tree Operations
 - `tree_minimum(node)`: Finds the minimum value in the tree.
 - `tree_maximum(node)`: Finds the maximum value in the tree.
-- `tree_suma(node)`: Computes the sum of all keys in the tree.
+- `tree_sum(node)`: Computes the sum of all keys in the tree.
 
 ## Node Insertion and Deletion
 - `insert(root, key)`: Inserts a new node into the tree and performs necessary rotations to maintain balance.
@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
     for key in keys:
         root = insert(root, key)
-    print("Values used to build the tree:", keys)
-    print("Minimum value in the AVL tree:", tree_minimum(root))
-    print("Maximum value in the AVL tree:", tree_maximum(root))
-    print("Sum of all values in the AVL tree:", tree_suma(root))
+    print("Values used to build the tree:", keys) # [5, 18, 33, 77, 2, 150, -2, 99]
+    print("Minimum value in the AVL tree:", tree_minimum(root)) # -2
+    print("Maximum value in the AVL tree:", tree_maximum(root)) # 150
+    print("Sum of all values in the AVL tree:", tree_sum(root)) # 382
